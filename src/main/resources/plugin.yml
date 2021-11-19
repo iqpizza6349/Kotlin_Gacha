@@ -1,0 +1,11 @@
+name: Kotlin_Gacha
+main: com.tistory.workshop6349.Main
+api-version: '1.17'
+version: 0.1.0
+website: https://workshop-6349.tistory.com/
+author: iqpizza6349
+
+commands:
+  hello:
+    description: None
+    usage: /<command>
