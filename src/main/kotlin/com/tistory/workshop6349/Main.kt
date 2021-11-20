@@ -1,14 +1,19 @@
 package com.tistory.workshop6349
 
-import org.bukkit.command.CommandExecutor
-import org.bukkit.event.Listener
 import org.bukkit.plugin.java.JavaPlugin
 
-open class Main : JavaPlugin(), Listener, CommandExecutor {
-    private sealed class MainCommand
+class Main : JavaPlugin() {
+
+    companion object {
+        var instance: Main ?= null
+        private set
+    }
 
     override fun onEnable() {
         logger.info("Plugin enabled")
+        getCommand("hello")?.setExecutor(MainCommand)
+        instance = this
+
     }
 
     override fun onDisable() {
