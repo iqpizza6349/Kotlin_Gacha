@@ -6,6 +6,6 @@ website: https://workshop-6349.tistory.com/
 author: iqpizza6349
 
 commands:
-  hello:
+  timer:
     description: None
     usage: /<command>
